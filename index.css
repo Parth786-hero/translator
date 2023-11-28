@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+/* :root , html */
+:root{
+    font-family: 'Poppins', sans-serif;
+    font-size : 62.5%;
+    /* color : #2f3640; */
+    /* color : white; */
+    color : black;
+}
+
+/* styling html basic elements  */
+ul li{
+    list-style: none;
+}
+
+p,li{
+    font-size: 1.6rem;
+    margin-bottom : .5em;
+    letter-spacing: .020em;
+}
+h1,h2,h3{
+    letter-spacing: .015em;
+    margin-bottom : .3em
+}
+
+a{
+    text-decoration: none;
+    color : black;
+}
+
+/* ##################### utility classes ############### */
+
+body{
+    width : 100%;
+    min-height : 100vh;
+    background-color: rgba(247, 190, 190, 0.126);
+    
+}
+.container{
+    max-width : 1200px;
+    width : 90%;
+    margin : auto;
+    /* background-color: rgba(128, 128, 128, 0.126); */
+}
+
+.white{
+    color : white;
+}
+.bg-blue{
+    background-color: #40739e;
+}
+.black{
+    color : #2f3640;
+}
+.fw-400{
+    font-weight : 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-300{
+    font-weight: 300;
+}
+.text-center{
+    text-align: center;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+
+.lg-heading{
+    font-size: 5.2rem;
+}
+.md-heading{
+    font-size: 2.8rem;
+}
+.md-sm-heading{
+    font-size: 2.1rem;
+}
+.small-text{
+    font-size: 1.2rem;
+}
+.normal-text{
+    font-size: 1.6rem;
+}
+.purple{
+    color : #9b59b6;
+}
+.bg-purple{
+    background-color: #9b59b6;
+}
+
+
+/* ############################### styling ##################### */
+.main-heading{
+    padding : .9em 0;
+}
+
+.wrapper{
+    /* border: 2px solid red; */
+    min-height : 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width : 65%; */
+}
+::placeholder{
+    text-transform: capitalize;
+}
+.card{
+    /* border: 2px solid green; */
+    background-color: white;
+    border-radius: .8rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 8px rgba(128, 128, 128, 0.28);
+    padding: 1.2rem;
+    width : 100%;
+    width : 70%;
+    /* width : 85vh; */
+}
+.text-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    border-bottom: 1px solid rgba(128, 128, 128, 0.404);
+
+}
+.text-boxes div{
+    width : 50%;
+}
+.text-boxes textarea{
+    display: block;
+    width : 100%;
+    height : 25rem;
+    border: none;
+    outline: none;
+    resize : none;
+    padding: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-size : 1.8rem;
+    font-weight: 300;
+    background: none;
+    color : black;
+
+}
+.text-box-to{
+    border-left : 1px solid rgba(128, 128, 128, 0.404);
+}
+
+.features{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+}
+.features li{
+    width : 35%;
+    /* border: 2px solid red; */
+    padding: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons{
+    width : 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    display: block;
+    width : 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding : 1em 0;
+    color : white;
+    border-radius: .4em;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+
+}
+.icons i{
+    font-size: 2rem;
+    color : #3d3d3d;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    padding: .5em;
+    /* color: rgba(128, 128, 128, 0.894); */
+
+}
+.arrow{
+    cursor: pointer;
+}
+i{
+    color : #3d3d3d;
+    font-weight : 300;
+    transition: all .2s ease-in-out;
+    padding: .5em;
+}
+.icons i:hover , i:hover{
+    /* font-size: 2.2rem; */
+    transform: scale(1.3);
+}
+.arrows{
+    /* border : 2px solid red; */
+    width : 25%;
+}
+select{
+    /* border: 2px solid red; */
+    border: none;
+    display: inline-block;
+    outline: none;
+    width : 55%;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    padding: .5em;
+    
+}
+
+@media (max-width : 768px){
+    :root{
+        font-size: 8.6px;
+    }
+    .wrapper{
+        width : 100%;
+    }
+    .card{
+        width : 100%;
+    }
+    .icons{
+        /* border: 2px solid red; */
+        flex-direction: column;
+    }
+    .features select{
+        display: block;
+        width : 100%;
+    }
+}

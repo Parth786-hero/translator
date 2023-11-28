@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="main-heading capitalize md-heading">language <span class="purple">translator</span></h2>
+        <div class="wrapper">
+            <div class="card">
+                <div class="text-boxes">
+                    <div class="text-box-from">
+                        <textarea placeholder="enter text here .."></textarea>
+                    </div>
+    
+                    <div class="text-box-to">
+                        <textarea placeholder="translate" readonly disabled></textarea>
+                    </div>
+    
+                </div>
+
+                <ul class="features">
+                    <li>
+                        <div class="icons">
+                            <i id="from" class="fa-solid fa-microphone speaker"></i>
+                            <i id="from" class="fa-solid fa-copy copy"></i>
+                            <select></select>
+                        </div>
+                    </li>
+                    <li class="arrows">
+                        <i class="fa-solid fa-right-left arrow"></i>
+                    </li>
+                    <li>
+                        <div class="icons">
+                            <select></select>
+                            
+                            <i id="to" class="fa-solid fa-copy copy"></i>
+                            <i id="to" class="fa-solid fa-microphone speaker"></i>
+                            
+                        </div>
+                    </li>
+                </ul>
+
+                <button class="fw-300 capitalize normal-text bg-purple">translate</button>
+            </div>
+        </div>
+    </div>
+    <script src="./lang.js" type="module"></script>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
